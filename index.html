@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <main class="container">
+      <section class="result">
+        <p class="calculation" id="calculation">4600/2+200*5</p>
+        <h3 class="answer" id="answer">=12,500</h3>
+      </section>
+      <section class="keys">
+        <button class="btn top-row" id="e" onclick="display('e')">e</button>
+        <button class="btn top-row" id="mu">μ</button>
+        <button class="btn top-row" id="sin">sin</button>
+        <button class="btn top-row" id="deg">deg</button>
+        <button class="btn" id="ac">Ac</button>
+        <button class="btn" id="delete">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 del"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2M3 12l6.414 6.414a2 2 0 001.414.586H19a2 2 0 002-2V7a2 2 0 00-2-2h-8.172a2 2 0 00-1.414.586L3 12z"
+            />
+          </svg>
+        </button>
+        <button class="btn operators" id="divide" onclick="display('÷')">
+          ÷
+        </button>
+        <button class="btn operators" id="multiply" onclick="display('*')">
+          *
+        </button>
+        <button class="btn number" id="seven" onclick="display('7')">7</button>
+        <button class="btn number" id="eight" onclick="display('8')">8</button>
+        <button class="btn number" id="nine" onclick="display('9')">9</button>
+        <button class="btn operators" id="substract" onclick="display('-')">
+          -
+        </button>
+        <button class="btn number" id="four" onclick="display('4')">4</button>
+        <button class="btn number" id="five" onclick="display('5')">5</button>
+        <button class="btn number" id="six" onclick="display('6')">6</button>
+        <button class="btn operators" id="plus" onclick="display('+')">
+          +
+        </button>
+        <button class="btn number" id="one" onclick="display('1')">1</button>
+        <button class="btn number" id="two" onclick="display('2')">2</button>
+        <button class="btn number" id="three" onclick="display('3')">3</button>
+        <button class="btn number" id="zero" onclick="display('0')">0</button>
+        <button class="btn number" id="dot" onclick="display('.')">.</button>
+        <button class="btn equal" id="equal">=</button>
+      </section>
+    </main>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
